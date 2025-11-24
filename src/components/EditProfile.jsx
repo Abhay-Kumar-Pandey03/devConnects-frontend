@@ -38,17 +38,23 @@ const EditProfile = ({ user }) => {
                 setShowToast(false);
             }, 3000);
         } catch (err) {
-            setError(err.response.data);
+            setError(err?.response?.data?.message || "Profile update failed");
+
         }
     };
 
     return (
         <>
-            <div className="flex justify-center my-10">
-                <div className="flex justify-center mx-10">
-                    <div className="card bg-base-300 w-96 shadow-xl">
+            <div className="min-h-screen w-full overflow-y-auto flex justify-center py-10">
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start max-w-5xl">
+
+
+                    {/* LEFT - Edit Profile */}
+                    <div className="card bg-base-300 w-96 m-auto mt-10 max-w-md shadow-2xl rounded-2xl">
+
                         <div className="card-body">
-                            <h2 className="card-title justify-center">Edit Profile</h2>
+                            <h2 className="card-title justify-center text-2xl font-bold text-center mb-6">Edit Profile</h2>
                             <div>
                                 <label className="form-control w-full max-w-xs my-2">
                                     <div className="label ">
@@ -127,16 +133,20 @@ const EditProfile = ({ user }) => {
                             </div>
                             <p className="text-red-500">{error}</p>
                             <div className="card-actions justify-center m-2">
-                                <button className="btn btn-primary" onClick={saveProfile}>
+                                <button className="btn btn-primary px-10 border border-blue-500/30" type="button" onClick={saveProfile}>
                                     Save Profile
                                 </button>
                             </div>
                         </div>
                     </div>
+
+                    <div className="w-full max-w-md">
+                        <UserCard
+                            user={{ firstName, lastName, photoUrl, age, gender, about }}
+                        />
+                    </div>
                 </div>
-                <UserCard
-                    user={{ firstName, lastName, photoUrl, age, gender, about }}
-                />
+
             </div>
             {showToast && (
                 <div className="toast toast-top toast-center">
