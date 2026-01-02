@@ -8,6 +8,7 @@ import Profile from "./components/Profile";
 import Feed from "./components/Feed";
 import Connections from "./components/Connections";
 import Requests from "./components/Requests";
+import Premium from "./components/Premium";
 
 // 🔹 IMPORT NEW PAGES
 import About from "./pages/About";
@@ -38,6 +39,7 @@ function AppRoutes() {
         <Route path="profile" element={<Profile />} />
         <Route path="connections" element={<Connections />} />
         <Route path="requests" element={<Requests />} />
+        <Route path="premium" element={<Premium />} />
 
         {/* 🌍 PUBLIC LEGAL & INFO ROUTES (NO AUTH REQUIRED) */}
         <Route path="about" element={<About />} />
