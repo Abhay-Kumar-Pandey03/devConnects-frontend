@@ -7,7 +7,7 @@ import { BASE_URL } from "../utils/constants";
 // import { useOutletContext } from "react-router-dom";
 
 const Chat = () => {
-    
+
     const { socket, onlineUsers } = useOutletContext();
     const location = useLocation();
     const targetUser = location.state;
@@ -60,7 +60,12 @@ const Chat = () => {
 
     useEffect(() => {
         fetchMessages();
-    }, []);
+    }, [targetUserId]);
+
+    // useEffect(() => {
+    //     setCanChat(false);
+    // }, [targetUserId]);
+
 
     useEffect(() => {
         if (!userId || !targetUserId) { return };
@@ -201,9 +206,9 @@ const Chat = () => {
                         <div className="chat-bubble break-words max-w-[75%]">{msg.text}</div>
                         {/* <div className="chat-footer opacity-50">Seen</div> */}
 
-                        <div ref={bottomRef} />
                     </div>
                 ))}
+                <div ref={bottomRef} />
             </div>
 
             {/* INPUT */}
