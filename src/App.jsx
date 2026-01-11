@@ -10,7 +10,7 @@ import Connections from "./components/Connections";
 import Requests from "./components/Requests";
 import Premium from "./components/Premium";
 import Chat from "./components/Chat";
-import AdminDashboard from "./components/adminDashboard";
+import AdminDashboard from "./components/AdminDashboard";
 import AdminRoute from "./components/AdminRoute";
 
 // 🔹 IMPORT NEW PAGES
