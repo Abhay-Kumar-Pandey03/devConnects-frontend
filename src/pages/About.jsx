@@ -2,10 +2,10 @@ const About = () => {
     return (
         <div className="min-h-screen bg-base-100 px-6 py-10">
             <div className="max-w-4xl mx-auto">
-                <h1 className="text-3xl font-bold mb-4">About DevTinder</h1>
+                <h1 className="text-3xl font-bold mb-4">About devConnects</h1>
 
                 <p className="mb-4">
-                    DevTinder is a platform designed to help developers connect, collaborate,
+                    devConnects is a platform designed to help developers connect, collaborate,
                     and build meaningful professional relationships.
                 </p>
 
@@ -17,12 +17,12 @@ const About = () => {
 
                 <p className="mb-4">
                     We are committed to transparency, data privacy, and secure transactions.
-                    All payments on DevTinder are processed through trusted payment partners.
+                    All payments on devConnects are processed through trusted payment partners.
                 </p>
 
                 <div className="mt-6">
-                    <p><strong>Business Name:</strong>DevTinder</p>
-                    <p><strong>Email:</strong> support@devtinder.me</p>
+                    <p><strong>Business Name:</strong>devConnects</p>
+                    <p><strong>Email:</strong> support@devTinder.me</p>
                     <p><strong>Location:</strong> India</p>
                 </div>
             </div>

@@ -10,6 +10,8 @@ import Connections from "./components/Connections";
 import Requests from "./components/Requests";
 import Premium from "./components/Premium";
 import Chat from "./components/Chat";
+import AdminDashboard from "./components/adminDashboard";
+import AdminRoute from "./components/AdminRoute";
 
 // 🔹 IMPORT NEW PAGES
 import About from "./pages/About";
@@ -42,6 +44,16 @@ function AppRoutes() {
         <Route path="requests" element={<Requests />} />
         <Route path="premium" element={<Premium />} />
         <Route path="chat/:targetUserId" element={<Chat />} />
+        <Route
+          path="/admin"
+          element={
+            <AdminRoute>
+              <AdminDashboard />
+            </AdminRoute>
+          }
+        />
+
+
 
         {/* 🌍 PUBLIC LEGAL & INFO ROUTES (NO AUTH REQUIRED) */}
         <Route path="about" element={<About />} />

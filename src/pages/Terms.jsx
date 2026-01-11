@@ -5,19 +5,19 @@ const Terms = () => {
                 <h1 className="text-3xl font-bold mb-6">Terms and Conditions</h1>
 
                 <p className="mb-4">
-                    By accessing or using DevTinder, you agree to comply with the following
+                    By accessing or using devConnects, you agree to comply with the following
                     terms and conditions.
                 </p>
 
                 <h2 className="text-xl font-semibold mt-6 mb-2">Service Usage</h2>
                 <p className="mb-4">
-                    You agree to use DevTinder only for lawful purposes and in accordance
+                    You agree to use devConnects only for lawful purposes and in accordance
                     with applicable laws.
                 </p>
 
                 <h2 className="text-xl font-semibold mt-6 mb-2">Payments</h2>
                 <p className="mb-4">
-                    All payments made on DevTinder are processed securely through Razorpay.
+                    All payments made on devConnects are processed securely through Razorpay.
                     Prices and services may change without prior notice.
                 </p>
 
@@ -28,7 +28,7 @@ const Terms = () => {
 
                 <h2 className="text-xl font-semibold mt-6 mb-2">Limitation of Liability</h2>
                 <p className="mb-4">
-                    DevTinder shall not be liable for any indirect or incidental damages
+                    devConnects shall not be liable for any indirect or incidental damages
                     arising from the use of our services.
                 </p>
 
@@ -40,7 +40,7 @@ const Terms = () => {
                 <h2 className="text-xl font-semibold mt-6 mb-2">Contact</h2>
                 <p>
                     For any questions regarding these terms, contact us at
-                    <strong> support@devtinder.me</strong>.
+                    <strong> support@devTinder.me</strong>.
                 </p>
             </div>
         </div>

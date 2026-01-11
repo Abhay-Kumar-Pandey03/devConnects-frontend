@@ -5,7 +5,7 @@ const PrivacyPolicy = () => {
                 <h1 className="text-3xl font-bold mb-6">Privacy Policy</h1>
 
                 <p className="mb-4">
-                    At DevTinder, we respect your privacy and are committed to protecting
+                    At devConnects, we respect your privacy and are committed to protecting
                     your personal information.
                 </p>
 
@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
 
                 <h2 className="text-xl font-semibold mt-6 mb-2">Payment Security</h2>
                 <p className="mb-4">
-                    All payments are securely processed through Razorpay. DevTinder does not
+                    All payments are securely processed through Razorpay. devConnects does not
                     store your card, UPI, or banking information.
                 </p>
 
@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
                 <h2 className="text-xl font-semibold mt-6 mb-2">Contact</h2>
                 <p>
                     For privacy-related concerns, please contact us at
-                    <strong> support@devtinder.me</strong>.
+                    <strong> support@devTinder.me</strong>.
                 </p>
             </div>
         </div>

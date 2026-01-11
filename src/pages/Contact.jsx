@@ -15,10 +15,10 @@ const Contact = () => {
                     <p>
                         <strong>Email:</strong>{" "}
                         <a
-                            href="mailto:support@devtinder.me"
+                            href="mailto:support@devTinder.me"
                             className="link link-hover"
                         >
-                            support@devtinder.me
+                            support@devTinder.me
                         </a>
                     </p>
 
